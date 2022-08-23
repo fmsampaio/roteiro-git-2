@@ -10,7 +10,9 @@ def main():
     plt.xlabel('Valores de entrada')
     plt.ylabel('Amostragem')
 
-    plt.plot(valores)
+    for serie in valores:
+        plt.plot(serie)
+        
     plt.show()
 
 main()
